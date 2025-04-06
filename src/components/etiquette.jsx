@@ -339,7 +339,7 @@ const EtiquetteGenerator = () => {
             >
               <div className="flex justify-between">
                 {/* Colonne de gauche: Codes-barres et texte */}
-                <div className="w-full md:w-3/5">
+                <div className="w-full md:w-3/5 flex-1">
                   {/* En-tête: Modèle et Couleur */}
                   <div className="flex justify-between mb-1">
                     <div className="font-bold  flex items-center justify-between w-full">
@@ -355,18 +355,22 @@ const EtiquetteGenerator = () => {
                       }}
                       className="w-full h-5 -ml-2"
                     ></svg>
-                    <div className="text-[10px] ">Imei: {etiquette.imei1}</div>
+                    <div className="text-[10px] -mt-1">
+                      Imei: {etiquette.imei1}
+                    </div>
                   </div>
 
                   {/* Deuxième code-barres et IMEI */}
-                  <div className=" flex flex-col items-start gap-0">
+                  <div className="flex flex-col items-start gap-0">
                     <svg
                       ref={(el) => {
                         if (el) barcode2Refs.current[index] = el;
                       }}
-                      className="w-full h-5 -ml-2"
+                      className="w-full h-5 -ml-2 mt-1"
                     ></svg>
-                    <div className="text-[10px] ">Imei: {etiquette.imei2}</div>
+                    <div className="text-[10px] -mt-1">
+                      Imei: {etiquette.imei2}
+                    </div>
                   </div>
 
                   {/* Numéro de série */}
@@ -379,8 +383,8 @@ const EtiquetteGenerator = () => {
                 <div className="py-0 flex flex-col items-center gap-1 mt-3 pl-2">
                   <QRCode
                     value={etiquette.imei1}
-                    size={70}
-                    className="w-16 h-16 mb-0"
+                    size={60}
+                    className="w-12 h-12 mb-0"
                   />
 
                   {/* Logo circulaire avec le label */}
