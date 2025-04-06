@@ -348,33 +348,29 @@ const EtiquetteGenerator = () => {
                     </div>
                   </div>
                   {/* Premier code-barres et IMEI */}
-                  <div className="mb-1 flex flex-col items-start">
+                  <div className="flex flex-col items-start gap-0">
                     <svg
                       ref={(el) => {
                         if (el) barcode1Refs.current[index] = el;
                       }}
                       className="w-full h-5 -ml-2"
                     ></svg>
-                    <div className="text-[10px] mt-0.5">
-                      Imei: {etiquette.imei1}
-                    </div>
+                    <div className="text-[10px] ">Imei: {etiquette.imei1}</div>
                   </div>
 
                   {/* Deuxième code-barres et IMEI */}
-                  <div className="mb-1 flex flex-col items-start">
+                  <div className=" flex flex-col items-start gap-0">
                     <svg
                       ref={(el) => {
                         if (el) barcode2Refs.current[index] = el;
                       }}
                       className="w-full h-5 -ml-2"
                     ></svg>
-                    <div className="text-[10px] mt-0.5">
-                      Imei: {etiquette.imei2}
-                    </div>
+                    <div className="text-[10px] ">Imei: {etiquette.imei2}</div>
                   </div>
 
                   {/* Numéro de série */}
-                  <div className="text-[8px] font-bold mt-1">
+                  <div className="text-[8px] font-bold ">
                     D/N:{etiquette.serial || "N/A"}
                   </div>
                 </div>
