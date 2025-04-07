@@ -353,7 +353,7 @@ const EtiquetteGenerator = () => {
                       ref={(el) => {
                         if (el) barcode1Refs.current[index] = el;
                       }}
-                      className="w-full h-5 -ml-2"
+                      className="w-auto h-5 -ml-0.5 "
                     ></svg>
                     <div className="text-[10px] -mt-1">
                       Imei: {etiquette.imei1}
@@ -366,7 +366,7 @@ const EtiquetteGenerator = () => {
                       ref={(el) => {
                         if (el) barcode2Refs.current[index] = el;
                       }}
-                      className="w-full h-5 -ml-2 mt-1"
+                      className="w-auto h-5 -ml-0.5   mt-1"
                     ></svg>
                     <div className="text-[10px] -mt-1">
                       Imei: {etiquette.imei2}
