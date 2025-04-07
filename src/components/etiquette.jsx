@@ -344,7 +344,7 @@ const EtiquetteGenerator = () => {
                   <div className="flex justify-between mb-1">
                     <div className="font-bold  flex items-center justify-between w-full">
                       <div className="text-[8px]">{etiquette.nom}</div>
-                      <div className="text-[8px]">{etiquette.couleur}</div>
+                      <div className="text-[8px] pr-5 whitespace-nowrap">{etiquette.couleur}</div>
                     </div>
                   </div>
                   {/* Premier code-barres et IMEI */}
