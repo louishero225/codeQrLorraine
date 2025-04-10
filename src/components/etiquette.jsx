@@ -36,7 +36,7 @@ const EtiquetteGenerator = () => {
       if (barcode1Refs.current[index] && etiquette.imei1) {
         JsBarcode(barcode1Refs.current[index], etiquette.imei1, {
           format: "CODE128",
-          width: 2,
+          width: 2.5,
           height: 40,
           displayValue: false,
         });
@@ -45,7 +45,7 @@ const EtiquetteGenerator = () => {
       if (barcode2Refs.current[index] && etiquette.imei2) {
         JsBarcode(barcode2Refs.current[index], etiquette.imei2, {
           format: "CODE128",
-          width: 2,
+          width: 2.5,
           height: 40,
           displayValue: false,
         });
